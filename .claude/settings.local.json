@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(mv \"frontend/docs/module-01-introduction/03-introduction-to-humanoid-robotics.md\" \"frontend/docs/module-01-introduction/introduction-to-humanoid-robotics.md\")"
-    ]
-  }
-}
