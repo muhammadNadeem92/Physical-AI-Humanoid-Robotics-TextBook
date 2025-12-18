@@ -12,7 +12,7 @@ const config = {
   url: 'https://muhammadNadeem92.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Physical-AI-Humanoid-Robotics-TextBook/',
 
   // GitHub pages deployment config.
   organizationName: 'muhammadNadeem92', // Usually your GitHub org/user name.
@@ -39,7 +39,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/muhammadNadeem92/physical-ai-humanoid-robotics-textbook/tree/main/',
+            'https://github.com/muhammadNadeem92/Physical-AI-Humanoid-Robotics-TextBook/tree/main/',
         },
         blog: false,
         theme: {
@@ -58,7 +58,7 @@ const config = {
         title: 'Physical AI & Humanoid Robotics',
         logo: {
           alt: 'Physical AI & Humanoid Robotics Logo',
-          src: 'frontend/static/img/book logo.jpg',
+          src: 'img/book-logo.jpg',
         },
         items: [
           {
@@ -68,7 +68,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/muhammadNadeem92/physical-ai-humanoid-robotics-textbook',
+            href: 'https://github.com/muhammadNadeem92/Physical-AI-Humanoid-Robotics-TextBook',
             label: 'GitHub',
             position: 'right',
           },
@@ -104,7 +104,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/muhammadNadeem92/physical-ai-humanoid-robotics-textbook',
+                href: 'https://github.com/muhammadNadeem92/Physical-AI-Humanoid-Robotics-TextBook',
               },
             ],
           },
