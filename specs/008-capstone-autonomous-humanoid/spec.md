@@ -285,6 +285,16 @@ As a learner focused on safety-critical systems, I want to understand how to han
 - **Action Graph**: Sequence of ROS 2 actions that implement the task plan, with dependencies and monitoring requirements
 - **Execution State**: Current status of task execution, including progress, errors, and recovery requirements
 
+## Clarifications
+
+### Session 2025-12-18
+
+- Q: What is the recommended development approach for safety considerations? → A: Development on simulation, final validation on proxy robot with comprehensive safety measures
+- Q: What safety boundaries should be maintained during operation? → A: Maintain 1m safety distance from humans, 0.5m from obstacles, with emergency stops
+- Q: What navigation system should be used for the autonomous humanoid? → A: Standard Nav2 with safety layers and obstacle avoidance
+- Q: What speech-to-text system should be used for voice command processing? → A: Use Whisper or similar established STT with privacy safeguards
+- Q: What action execution interface should be used for robot operations? → A: Standard ROS 2 action interfaces with feedback and result reporting
+
 ## Success Criteria *(mandatory)*
 
 ### Measurable Outcomes

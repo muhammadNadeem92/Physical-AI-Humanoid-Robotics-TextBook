@@ -4,7 +4,7 @@
 
 This chapter focuses on transforming natural language voice commands into structured task plans that can be executed by the autonomous humanoid system. You'll learn how to connect voice processing with LLM reasoning to create robust pipelines that convert human intent into executable actions.
 
-The voice-to-plan pipeline represents a critical integration point between human communication and robotic action. This chapter emphasizes the connection between language understanding and physical execution, ensuring that abstract commands are translated into concrete, safe actions. The pipeline must handle ambiguity, validate intentions, and create structured plans that the rest of the system can execute reliably.
+The voice-to-plan pipeline represents a critical integration point between human communication and robotic action. This chapter builds on the voice processing concepts from [Module 6](../module-06-vla-systems/voice-language) and connects them with the LLM reasoning concepts from [Module 5](../module-05-isaac-ai-brain/learning-sim2real). This chapter emphasizes the connection between language understanding and physical execution, ensuring that abstract commands are translated into concrete, safe actions. The pipeline must handle ambiguity, validate intentions, and create structured plans that the rest of the system can execute reliably.
 
 By the end of this chapter, you'll understand how to create voice-to-plan pipelines that connect human intent to robotic action while maintaining safety and reliability throughout the translation process.
 

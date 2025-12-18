@@ -4,7 +4,7 @@
 
 This chapter focuses on deploying, testing, and evaluating the complete autonomous humanoid system with robust failure recovery strategies. You'll learn how to operate the system across different computing platforms while maintaining safety and reliability in real-world conditions.
 
-The deployment, evaluation, and failure recovery system ensures that the integrated autonomous humanoid system operates safely and effectively in various environments. This chapter emphasizes how to handle the practical challenges of real-world deployment, from resource constraints on edge devices to comprehensive evaluation of system performance. The system must be robust enough to handle failures gracefully while maintaining safety at all times.
+The deployment, evaluation, and failure recovery system ensures that the integrated autonomous humanoid system operates safely and effectively in various environments. This chapter builds on the simulation concepts from [Module 4](../module-04-digital-twin/digital-twin-concepts), the safety concepts from [Module 7](../module-07-humanoid-hri/human-robot-interaction), and the platform concepts from [Module 5](../module-05-isaac-ai-brain/isaac-architecture). This chapter emphasizes how to handle the practical challenges of real-world deployment, from resource constraints on edge devices to comprehensive evaluation of system performance. The system must be robust enough to handle failures gracefully while maintaining safety at all times.
 
 By the end of this chapter, you'll understand how to deploy complete autonomous humanoid systems with appropriate safety measures, evaluation frameworks, and recovery strategies for real-world operation.
 

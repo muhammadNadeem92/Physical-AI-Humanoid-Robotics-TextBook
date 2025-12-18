@@ -4,7 +4,7 @@
 
 This chapter focuses on executing plans safely using ROS 2 actions and navigation systems. You'll learn how to translate high-level task plans into low-level robot behaviors while maintaining safety, monitoring execution state, and handling failures appropriately.
 
-The action execution and navigation system represents the physical manifestation of the autonomous humanoid system's capabilities. This chapter emphasizes how abstract plans from the voice-to-plan pipeline are converted into concrete robot behaviors through ROS 2 actions. The system must ensure safe navigation and manipulation while providing feedback on execution progress.
+The action execution and navigation system represents the physical manifestation of the autonomous humanoid system's capabilities. This chapter builds on the ROS 2 concepts from [Module 2](../module-02-ros2/nodes-topics-messages), the navigation concepts from [Module 4](../module-04-digital-twin/gazebo-ros2), and the manipulation concepts from [Module 7](../module-07-humanoid-hri/manipulation-grasping). This chapter emphasizes how abstract plans from the voice-to-plan pipeline are converted into concrete robot behaviors through ROS 2 actions. The system must ensure safe navigation and manipulation while providing feedback on execution progress.
 
 By the end of this chapter, you'll understand how to create action execution systems that safely translate plans into robot behaviors with proper monitoring and feedback mechanisms.
 

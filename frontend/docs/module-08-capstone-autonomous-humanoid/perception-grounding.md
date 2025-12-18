@@ -4,7 +4,7 @@
 
 This chapter focuses on binding abstract language to physical reality through perception and spatial grounding. You'll learn how to connect vision systems with language understanding, creating a bridge between symbolic representations and concrete environmental features.
 
-The perception & grounding system serves as the foundation for all physical interaction in the autonomous humanoid system. This chapter emphasizes how abstract concepts from voice commands are connected to specific objects and locations in the real world. The system must handle uncertainty in perception while maintaining reliable connections between language and reality.
+The perception & grounding system serves as the foundation for all physical interaction in the autonomous humanoid system. This chapter builds on the vision perception concepts from [Module 5](../module-05-isaac-ai-brain/perception-navigation) and the sensor modeling from [Module 3](../module-03-sim-fundamentals/sensor-modeling-noise). This chapter emphasizes how abstract concepts from voice commands are connected to specific objects and locations in the real world. The system must handle uncertainty in perception while maintaining reliable connections between language and reality.
 
 By the end of this chapter, you'll understand how to create perception systems that ground abstract language in concrete environmental features while maintaining safety and reliability in uncertain conditions.
 
