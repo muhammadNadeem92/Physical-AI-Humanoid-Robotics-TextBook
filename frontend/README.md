@@ -1,6 +1,14 @@
 # Physical AI & Humanoid Robotics Textbook
 
-This is the frontend for the Physical AI & Humanoid Robotics Textbook, built with Docusaurus.
+This is the frontend for the Physical AI & Humanoid Robotics Textbook, built with Docusaurus and featuring an integrated chat interface.
+
+## Features
+
+- Interactive textbook content
+- Embedded chatbot interface using ChatKit UI
+- Text selection functionality for contextual questioning
+- Session management for conversations
+- Source transparency with citations
 
 ## Installation
 
@@ -42,3 +50,13 @@ GIT_USER=<Your GitHub username> npm run deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Chat Interface Integration
+
+The frontend includes a custom Docusaurus plugin for chat integration located at `src/plugins/docusaurus-plugin-chatkit/`. This plugin provides:
+
+- Floating chat widget available on all documentation pages
+- Text selection detection and "Ask about this" overlay
+- Session state management across page navigations
+- Responsive design for desktop and mobile
+- Accessibility features (keyboard navigation, screen reader support)

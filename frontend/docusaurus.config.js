@@ -49,6 +49,19 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      './plugins/docusaurus-plugin-chatkit/src/index.js',
+      {
+        position: 'bottom-right',
+        showOnMobile: true,
+        sessionTimeout: 30,
+        maxSelectedTextLength: 1000,
+        apiBaseUrl: process.env.BACKEND_API_BASE_URL || 'http://localhost:8000',
+      }
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
