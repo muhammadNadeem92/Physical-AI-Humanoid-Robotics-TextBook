@@ -27,7 +27,7 @@ export interface FeedbackRequest {
 }
 
 export interface Configuration {
-  apiUrl: string;
+  apiBaseUrl: string;
   timeout?: number;
 }
 
@@ -50,7 +50,7 @@ class ApiService {
    * Send a chat query to the backend
    */
   async chatQuery(request: ChatQueryRequest): Promise<any> {
-    const response = await fetch(`${this.config.apiUrl}/chat/query`, {
+    const response = await fetch(`${this.config.apiBaseUrl}/chat/query`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ class ApiService {
    * Send a selected text query to the backend
    */
   async selectedTextQuery(request: SelectedTextQueryRequest): Promise<any> {
-    const response = await fetch(`${this.config.apiUrl}/chat/selected-text`, {
+    const response = await fetch(`${this.config.apiBaseUrl}/chat/selected-text`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ class ApiService {
    * Get chat history for a session
    */
   async getChatHistory(sessionId: string): Promise<any> {
-    const response = await fetch(`${this.config.apiUrl}/chat/history/${sessionId}`, {
+    const response = await fetch(`${this.config.apiBaseUrl}/chat/history/${sessionId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ class ApiService {
    * Submit feedback for a response
    */
   async submitFeedback(request: FeedbackRequest): Promise<any> {
-    const response = await fetch(`${this.config.apiUrl}/chat/feedback`, {
+    const response = await fetch(`${this.config.apiBaseUrl}/chat/feedback`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ class ApiService {
    * Get session statistics
    */
   async getSessionStats(sessionId: string): Promise<any> {
-    const response = await fetch(`${this.config.apiUrl}/chat/stats/${sessionId}`, {
+    const response = await fetch(`${this.config.apiBaseUrl}/chat/stats/${sessionId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -143,7 +143,7 @@ class ApiService {
    * Create a streaming request
    */
   async createStreamingRequest(endpoint: string, request: any): Promise<ReadableStreamDefaultReader> {
-    const response = await fetch(`${this.config.apiUrl}${endpoint}`, {
+    const response = await fetch(`${this.config.apiBaseUrl}${endpoint}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

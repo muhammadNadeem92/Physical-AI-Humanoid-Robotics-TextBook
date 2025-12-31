@@ -5,16 +5,30 @@ import { ConfigProvider } from '../../../../src/contexts/ConfigContext';
 import ChatWidget from '../../../../src/components/ChatWidget';
 import TextSelectionHandler from '../../../../src/components/TextSelectionHandler';
 
-// Get configuration from Docusaurus
-const config = typeof window !== 'undefined' ? window.chatkitConfig || {} : {};
+// Get configuration from Docusaurus global data
+let config = {};
+if (typeof window !== 'undefined') {
+  // Try to get from global data set by the plugin
+  config = window?.__DOCUSAURUS_GLOBAL_DATA__?.['docusaurus-plugin-chatkit/src/index']?.chatkit || {};
 
-// Default configuration
+  // Fallback to window.chatkitConfig if not found in global data
+  if (!config.apiBaseUrl) {
+    config = { ...config, ...window.chatkitConfig };
+  }
+
+  // Set default if still not available
+  if (!config.apiBaseUrl) {
+    config.apiBaseUrl = '/api/v1';
+  }
+}
+
+// Default configuration with plugin config
 const defaultConfig = {
-  apiBaseUrl: '/api/v1', // Default API base URL
-  sessionTimeout: 30,
-  widgetPosition: 'bottom-right',
-  showWidgetOnMobile: true,
-  maxSelectedTextLength: 1000,
+  apiBaseUrl: config.apiBaseUrl || '/api/v1',
+  sessionTimeout: config.sessionTimeout || 30,
+  widgetPosition: config.position || 'bottom-right',
+  showWidgetOnMobile: config.showOnMobile !== undefined ? config.showOnMobile : true,
+  maxSelectedTextLength: config.maxSelectedTextLength || 1000,
   ...config,
 };
 

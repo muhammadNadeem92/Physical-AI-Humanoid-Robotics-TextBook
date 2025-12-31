@@ -1,0 +1,18 @@
+# Hugging Face Space configuration
+type: inference-endpoint
+runtime:
+  cpu: 2
+  memory: 8Gi
+  accelerator: cpu
+  concurrency: 1
+  timeout: 300
+secrets:
+  - COHERE_API_KEY
+  - QDRANT_API_KEY
+  - QDRANT_URL
+  - GEMINI_API_KEY
+  - DATABASE_URL
+  - OPENAI_API_KEY
+variables:
+  DEBUG: "False"
+  ALLOWED_ORIGINS: "*"

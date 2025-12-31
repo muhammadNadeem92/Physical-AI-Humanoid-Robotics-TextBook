@@ -57,7 +57,7 @@ const config = {
         showOnMobile: true,
         sessionTimeout: 30,
         maxSelectedTextLength: 1000,
-        apiBaseUrl: process.env.BACKEND_API_BASE_URL || '/api/v1',
+        apiBaseUrl: process.env.BACKEND_API_BASE_URL || 'http://localhost:8000',
       }
     ],
   ],
